@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.background-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}  
+
+
+.background-layer-1 {
+    background-image: url(public/ghzBackgroundLayer1.png);
+    background-size: 100vh auto;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.background-layer-2 {
+    background-image: url(public/ghzBackgroundLayer2.png);
+    background-size: 100vh auto;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.background-layer-3 {
+    background-image: url(public/ghzBackgroundLayer3.png);
+    background-size: 100vh auto;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.background-layer-4 {
+    background-image: url(public/ghzBackgroundLayer4.png);
+    background-size: 100vh auto;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+}
