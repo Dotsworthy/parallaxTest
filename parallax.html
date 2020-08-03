@@ -9,14 +9,20 @@
     </head>
     <body>
         <div class="background-container">
-            <img class="background-layer-1"></img>
-            <img class="background-layer-2"></img>
-            <img class="background-layer-3"></img>
-            <img class="background-layer-4"></img>
+                <img src="public/ghzBackgroundLayer1.png" class="background-layer"></img>
+                <img src="public/ghzBackgroundLayer2.png" class="background-layer"></img>
+                <img src="public/ghzBackgroundLayer3.png" class="background-layer"></img>
+                <img src="public/ghzBackgroundLayer4.png" class="background-layer"></img>
         </div>
 
         <script>
-        
+
+        function findKey(e) {
+            console.log(e.keyCode);
+        }
+
+        const keys = Array.from(document.querySelectorAll('.key'))
+        window.addEventListener('keydown', findKey)
         </script>
     </body>
 </html>
