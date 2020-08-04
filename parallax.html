@@ -8,20 +8,24 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div id="background-container">
-                <img src="public/green_hill_zone_full_layer.png" class="background-layer"></img>
-
+        <div class="parallax">
+            <div class="parallax__layer parallax__layer--back">
+                ...
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+                ...
+            </div>
         </div>
 
         <script>
-        const layer = document.documentElement
-        const keys = Array.from(document.querySelectorAll('.key'))
-        window.addEventListener('keydown', scroll)
+        // const layer = document.documentElement
+        // const keys = Array.from(document.querySelectorAll('.key'))
+        // window.addEventListener('keydown', scroll)
         
-        function scroll(e) {
-            console.log(e)
-            layer.style.setProperty('--keydown',-1 + 'px')
-        }
+        // function scroll(e) {
+        //     console.log(e)
+        //     layer.style.setProperty('--keydown',-1 + 'px')
+        // }
 
         
         </script>

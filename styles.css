@@ -8,17 +8,22 @@
     padding: 0;
   }
 
-#background-container {
-    overflow: hidden;
-    width: 100vw;
-}  
-
-
-.background-layer {
-    position: fixed;
-    left: var('--keydown');
+  .parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .parallax__layer {
+    position: absolute;
     top: 0;
-    height: 80vh;
-}
-
- 
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  .parallax__layer--back {
+    transform: translateZ(-1px);
+  }
