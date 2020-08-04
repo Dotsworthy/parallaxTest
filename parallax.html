@@ -8,21 +8,22 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div class="background-container">
-                <img src="public/ghzBackgroundLayer1.png" class="background-layer"></img>
-                <img src="public/ghzBackgroundLayer2.png" class="background-layer"></img>
-                <img src="public/ghzBackgroundLayer3.png" class="background-layer"></img>
-                <img src="public/ghzBackgroundLayer4.png" class="background-layer"></img>
+        <div id="background-container">
+                <img src="public/green_hill_zone_full_layer.png" class="background-layer"></img>
+
         </div>
 
         <script>
-
-        function findKey(e) {
-            console.log(e.keyCode);
+        const layer = document.documentElement
+        const keys = Array.from(document.querySelectorAll('.key'))
+        window.addEventListener('keydown', scroll)
+        
+        function scroll(e) {
+            console.log(e)
+            layer.style.setProperty('--keydown',-1 + 'px')
         }
 
-        const keys = Array.from(document.querySelectorAll('.key'))
-        window.addEventListener('keydown', findKey)
+        
         </script>
     </body>
 </html>

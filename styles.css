@@ -1,16 +1,24 @@
+:root {
+    --keydown: 0px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-.background-container {
-    display: flex;
-    flex-direction: row;
+#background-container {
+    overflow: hidden;
+    width: 100vw;
 }  
 
 
 .background-layer {
-   height: 100vh;
+    position: fixed;
+    left: var('--keydown');
+    top: 0;
+    height: 80vh;
 }
 
+ 
